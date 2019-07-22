@@ -32,4 +32,5 @@ Test it by adding to your activity onCreate:
         }
         
  
-Make sure your device contains the in.mp4 file (small mp4 file for the tests).
+Make sure your device contains the in.mp4 file (small mp4 file for the tests), in this location:
+/sdcard/videokit/in.mp4
