@@ -11,6 +11,7 @@ implementation 'com.netcompss:ffmpeg4android_lib:41.06'
 And you are done!
 
 Test it by adding to your activity onCreate:
+
         GeneralUtils.checkForPermissionsMAndAbove(MainActivity.this, true);
         
         LoadJNI vk = new LoadJNI();
