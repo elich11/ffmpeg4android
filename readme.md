@@ -26,4 +26,6 @@ Test it by adding to your activity onCreate:
         Log.e("test", "vk run exception.", e);
         
     }
-Make sure your device contains the in.mp4 file (small mp4 file for the tests), in this location: /sdcard/videokit/in.mp4
+Make sure your device contains the in.mp4 file (small mp4 file for the tests), in this location: /sdcard/videokit/in.mp4.
+You can get it from the demo assets folder: 
+ffmpeg4android/ffmpeg4android_demo/src/main/assets/
