@@ -1,17 +1,30 @@
-FFmpeg4Android Demo.
+ffmpeg4android
+To add FFmpeg support to your app:
 
+Add this permission to your manifest:
+Add this line to your app gradle.build: implementation 'com.netcompss:ffmpeg4android_lib:41.06'
+And you are done!
 
-* By default, it will run the UI edit box command, you can change the command in the edit box, 
-  or replace the command in the code (search for commandStr).
-  
-* Its highly recommended to use the complexCommand (String Array), as it supports all types of commands, and filenames with spaces, ]]
-  and special characters.
- 
-* After running the demo, the out.mp4 will be created in the /sdcard/videokit folder.
- 
-* Supported devices: this will work on ARMv7 and above devices (most devices today are ARMv7 or above).
-  If you use an emulator, make sure you select devices that support ARMv7 or above (e.g Nexus 7).
- 
-* Note that the Simple Example does not have stop support, so in-case you will not let the operation end, it can interfere with the next
-  Transcoding operation.
+Test it by adding to your activity onCreate:
+
+    GeneralUtils.checkForPermissionsMAndAbove(MainActivity.this, true);
+    
+    LoadJNI vk = new LoadJNI();
+    
+    try {
+    
+        String workFolder = getApplicationContext().getFilesDir().getAbsolutePath();
+        
+        String[] complexCommand = {"ffmpeg","-i", "/sdcard/videokit/in.mp4"};
+        
+        vk.run(complexCommand , workFolder , getApplicationContext());
+        
+        Log.i("test", "ffmpeg4android finished successfully");
+        
+    } catch (Throwable e) {
+    
+        Log.e("test", "vk run exception.", e);
+        
+    }
+Make sure your device contains the in.mp4 file (small mp4 file for the tests), in this location: /sdcard/videokit/in.mp4
   
