@@ -1,0 +1,22 @@
+Supported filters:
+overlay 
+transpose 
+crop 
+scale 
+aresample 
+concat 
+pad 
+curves 
+fade 
+
+The supported encoders are:
+png,jpeg2000,mpeg4,aac,libmp3lame,vorbis,pcm_s16le
+
+The supported decoders are:
+h264,mpeg4,mp3,aac,dvvideo,mpegvideo,mjpeg,dnxhd,dirac,pcm_s16le
+
+Supported muxers:
+mp4,mp3,ogg,webm,wav,avi
+
+Supported demuxers:
+h264,mpegvideo,mp3,ogg,webm,wav,avi,mov,nut,aac,rawvideo,image2

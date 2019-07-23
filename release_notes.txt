@@ -1,0 +1,62 @@
+4.1_06 (not published)
+------
+* removed x264 from command validation warnings.
+
+4.1_05
+------
+* Upgraded base to 4.1.
+* Loader improvements, much more reliable.
+* Full 64-bit support.
+
+3.22_03_ess_au_p27
+--------------------
+added adts muxer to support m4a encoding
+
+-enable-parser=aac,dpx,pnm,aac_latm,dvaudio,ac3,flac,mpegaudio,vorbis,cook,dca,opus,dirac,dnxhd \
+--enable-muxer=mp4,mp3,ogg,webm,wav,avi,adts \
+--enable-demuxer=mp3,ogg,webm,wav,avi,mov,nut,aac,rawvideo \
+--enable-decoder=mp3,aac,dvvideo,mjpeg,dnxhd,dirac,png,pcm_s16le \
+--enable-encoder=png,jpeg2000,aac,libmp3lame,vorbis,pcm_s16le \
+
+3.22.02
+--------
+* Progress  calculation fixes.
+* Stability fixes.
+
+3.22.01
+--------
+* Added Internet permission to support streaming (RealTime, and Manifest).
+
+3.22.00
+--------
+* FFmpeg Base upgraded to 3.22
+* Android Target updated to 25.
+
+25.24.10 
+------
+* More cleanups
+
+2.5.24.9
+--------
+* Refactors, and cleanups
+
+2.5.24.8
+--------
+* checkForPermissionsMAndAbove block param added.
+
+2.5.24.7
+--------
+* Added commands.txt, readme.txt, and more support text docs.
+* checkForPermissionsMAndAboveBlocking added to support blocking permissions.
+
+
+2.5.24.6
+--------
+* Fixed MultipleCommandsExample (missing png in the demo folder, and added -y).
+* Fixed lib version number.
+* CommandText fix for Android 6.
+
+2.5.24.4
+---------
+* Removed x86 (moved to extras).
+* abiFilter "x86" commented out

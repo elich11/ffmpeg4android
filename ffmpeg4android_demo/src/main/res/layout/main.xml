@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+ 
+    <TextView  
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" 
+	    android:text="@string/welcome_demo"
+	    android:layout_marginTop="25dp"
+	    android:layout_marginBottom="25dp"
+		android:layout_marginLeft="5dp"
+		android:layout_marginRight="5dp"
+	    android:textSize="18sp" />
+	
+    
+    <TableLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:stretchColumns="0">
+    
+    	<Button
+            android:id="@+id/startSimpleAct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Simple Example" >
+        </Button>
+        
+    	<Button
+            android:id="@+id/startProgressAct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="ProgressBar Example" >
+        </Button>
+        
+    	<Button
+            android:id="@+id/startProgressWithNotificationAct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="ProgressBar with Notification Example" >
+        </Button>
+        
+    	<Button
+            android:id="@+id/startMultiAct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Multiple Commands Example" >
+        </Button>
+    
+    </TableLayout>
+    
+
+</LinearLayout>

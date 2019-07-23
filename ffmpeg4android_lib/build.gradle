@@ -1,0 +1,43 @@
+apply plugin: 'com.android.library'
+
+/////////////////// needed for publish /////////
+ext {
+    bintrayRepo = 'ffmpeg4android_lib'
+    bintrayName = 'ffmpeg4android_lib'
+    publishedGroupId = 'com.netcompss'
+    libraryName = 'ffmpeg4android_lib'
+    artifact = 'ffmpeg4android_lib'
+    libraryDescription = 'ffmpeg4android_lib'
+    siteUrl = 'https://github.com/elich11/ffmpeg4android'
+    gitUrl = 'https://github.com/elich11/ffmpeg4android'
+    libraryVersion = '41.06'
+    developerId = 'elich11'
+    developerName = 'Eli Hasson'
+    developerEmail = 'hasson.eli@gmail.com'
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
+////////////////////////////////////////////////
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        minSdkVersion 19
+        targetSdkVersion 27
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+        //lintOptions {
+        //    checkReleaseBuilds false
+        //}
+    }
+}
+//Add these lines to publish library to bintray
+//Place it at the end of the file
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'
