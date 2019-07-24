@@ -2,8 +2,16 @@ ffmpeg4android
 To add FFmpeg support to your app:
 
 Add this permission to your manifest:
-Add this line to your app gradle.build: implementation 'com.netcompss:ffmpeg4android_lib:41.06'
+
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+Add this line to your app gradle.build: 
+
+implementation 'com.netcompss:ffmpeg4android_lib:41.06'
+
 And you are done!
+
+
 
 Test it by adding to your activity onCreate:
 
