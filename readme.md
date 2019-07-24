@@ -3,7 +3,7 @@ To add FFmpeg support to your app:
 
 Add this permission to your manifest:
 
-<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+android.permission.WRITE_EXTERNAL_STORAGE
 
 Add this line to your app gradle.build: 
 
