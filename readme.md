@@ -4,7 +4,7 @@ Add this permission to your manifest:
 
 android.permission.WRITE_EXTERNAL_STORAGE
 
-Make sure the <application> contains: android:extractNativeLibs="true"
+Make sure the your app application tag in the Manifest contains: android:extractNativeLibs="true"
 
 Add this line to your app gradle.build: 
 
