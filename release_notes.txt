@@ -1,4 +1,12 @@
-4.1_06 (not published)
+4.1_08
+-----
+* Added android:extractNativeLibs="true" to the demo application manifest file
+
+4.1_07
+-----
+* Fixed some bugs related to 32bit devices.
+
+4.1_06
 ------
 * removed x264 from command validation warnings.
 
