@@ -1,9 +1,16 @@
-ffmpeg4android
 To add FFmpeg support to your app:
 
 Add this permission to your manifest:
-Add this line to your app gradle.build: implementation 'com.netcompss:ffmpeg4android_lib:41.06'
+
+android.permission.WRITE_EXTERNAL_STORAGE
+
+Add this line to your app gradle.build: 
+
+implementation 'com.netcompss:ffmpeg4android_lib:41.07'
+
 And you are done!
+
+
 
 Test it by adding to your activity onCreate:
 
@@ -26,5 +33,6 @@ Test it by adding to your activity onCreate:
         Log.e("test", "vk run exception.", e);
         
     }
-Make sure your device contains the in.mp4 file (small mp4 file for the tests), in this location: /sdcard/videokit/in.mp4
-  
+Make sure your device contains the in.mp4 file (small mp4 file for the tests), in this location: /sdcard/videokit/in.mp4.
+You can get it from the demo assets folder: 
+ffmpeg4android/ffmpeg4android_demo/src/main/assets/
