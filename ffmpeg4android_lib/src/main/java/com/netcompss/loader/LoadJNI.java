@@ -81,8 +81,6 @@ public final class LoadJNI {
 	}
 	
 	private static String getVideokitLibPath(Context ctx) {
-		// old way: remove in the future
-		//String videokitLibPath = ctx.getFilesDir().getParent()  + "/lib/libvideokit.so";
 
 		// working 64 bit
 		String videokitLibPath = ctx.getApplicationInfo().nativeLibraryDir  + "/libvideokit.so";
