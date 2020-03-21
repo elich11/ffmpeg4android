@@ -4,9 +4,11 @@ Add this permission to your manifest:
 
 android.permission.WRITE_EXTERNAL_STORAGE
 
+Make sure the <application> contains: android:extractNativeLibs="true"
+
 Add this line to your app gradle.build: 
 
-implementation 'com.netcompss:ffmpeg4android_lib:41.07'
+implementation 'com.netcompss:ffmpeg4android_lib:41.08'
 
 And you are done!
 
